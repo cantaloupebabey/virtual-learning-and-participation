@@ -40,7 +40,7 @@
    <header> 
 
    	<div class="header-logo">
-	      <a href="index.html">Infinity</a>
+	      <a href="index.html">E-learning</a>
 	   </div> 
 
 		<a id="header-menu-trigger" href="#0">
@@ -52,14 +52,14 @@
 
 			<a href="#0" class="close-button" title="close"><span>Close</span></a>	
 
-	   	<h3>Infinity.</h3>  
+	   	<h3>sections</h3>  
 
 			<ul class="nav-list">
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-				<li><a class="smoothscroll" href="#about" title="">About</a></li>
-				<li><a class="smoothscroll" href="#services" title="">Services</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
-				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>						
+				<li><a class="smoothscroll" href="#about" title="">The Question</a></li>
+				<li><a class="smoothscroll" href="#services" title="">The Process</a></li>
+				<li><a class="smoothscroll" href="#portfolio" title="">Charts</a></li>
+				<li><a class="smoothscroll" href="#contact" title="">Conclusion</a></li>						
 			</ul>	
 
 			<p class="sponsor-text">
@@ -182,8 +182,6 @@
    				<h3>The Process</h3>
    			   <h1>What Steps were taken?</h1>
    			
-   			   <p class="lead">Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud deserunt est officia minim.</p>
-   			
    	   </div> <!-- end col-full -->
    	</div> <!-- end row -->
 
@@ -196,59 +194,64 @@
 	      		<span class="icon"><i class="icon-paint-brush"></i></span>            
 
 	            <div class="service-content">
-	            	<h3 class="h05">Clean up</h3>
+	            	<h3 class="h05">Clean up + Reformatting</h3>
 
-		            <p>First, I had to remove absent students. Slackers. Using df.drop, I deleted rows (students) if their time online was 0 seconds.</p>	         		
-	         	</div> 	         	 
+		            <p>First, I had to remove absent students. Slackers. Using df.drop, I deleted rows (students) if their time online was 0 seconds.</p>
+					<p>Whoever thought it was a smart idea to use commas instead of a period to separate demical values CHOSE to make my life harder. I used x.replace in a for loop to change all ',' to '.'</p><br>
+					<p>I also turned values for time online into minutes from seconds with another for loop, so it would be easier to interpret the information.</p>	         		
+	         	
+				</div> 	         	 
 
-				</div> <!-- end bgrid -->
+			</div> <!-- end bgrid -->
 
-				<div class="bgrid service-item animate-this">	
+			<div class="bgrid service-item animate-this">	
 
 					<span class="icon"><i class="icon-earth"></i></span>                          
 
 	            <div class="service-content">	
-	            	<h3 class="h05">Reformatting</h3>  
+	            	<h3 class="h05">Adding columns</h3>  
 
-		            <p>Whoever thought it was a smart idea to use commas instead of a period to separate demical values CHOSE to make my life harder. I used x.replace in a for loop to change all ',' to '.'</p><br>
-					<p>I also turned values for time online into minutes from seconds with another for loop, so it would be easier to interpret the information.</p>         		
+					<p>
+						After fixing all the individual sk grade values, 
+						it was a breeze using df.iloc to average the students' grades into a new column. <br><br>
+						I also made a total reactions column, 
+						by using the same line but with different splicing and .sum instead of .mean</p>
+		                     		
 	            </div>	                          
 
-			   </div> <!-- end bgrid -->
+			</div> <!-- end bgrid -->
 
-			   <div class="bgrid service-item animate-this">
+			<div class="bgrid service-item animate-this">
 
 			   	<span class="icon"><i class="icon-lego-block"></i></span>		            
 
 	            <div class="service-content">
-	            	<h3 class="h05">Final grade column</h3>
+	            	<h3 class="h05">Printing values for Chart JS</h3>
 
-		            <p>After fixing all the individual sk grade values, it was a breeze using df.iloc to average the students' grades into a new column.</p>
+		            <p>
+						With a <strike>lot</strike>little help from Nicole, 
+						I used df.iterrows to df.append x and y coordinates in the specified format to a dictionary, 
+						then printed the dictionary. Even though it had extra quote marks, 
+						using ctrl+f, ctrl+h, and about 3 minutes, the chart data was done. <br><br>
+						Another place where I had to print values for the charts was for the student number labels and
+						approval green/red colors. [insert part where i actually do that]
+					</p>
 	            </div> 	            	               
 
-			   </div> <!-- end bgrid -->
+			</div> <!-- end bgrid -->
 
-				<div class="bgrid service-item animate-this">
+			<div class="bgrid service-item animate-this">
 
 					<span class="icon"><i class="icon-megaphone"></i></span>	              
 
 	            <div class="service-content">
-	            	<h3 class="h05">Printing JS data chart values</h3>
+	            	<h3 class="h05">Data analysis, conclusion</h3>
 
-		            <p>With a <strike>lot</strike>little help from Nicole, I used df.iterrows to df.append x and y coordinates in the specified format to a dictionary, then printed the dictionary. Even though it had extra quote marks, using ctrl+f, ctrl+h, and about 3 minutes, the chart data was done.</p>	         		
-	            </div>   
-				
-				<div class="bgrid service-item animate-this">
-
-					<span class="icon"><i class="icon-tool"></i></span>	              
-
-	            <div class="service-content">
-	            	<h3 class="h05">Data analysis</h3>
-
-		            <p>adding a trendline? sussy baka</p>	         		
-	            </div>
-
-				</div> <!-- end bgrid -->			   
+		            <p>
+						With the charts mostly done, all was left to do was to actually analyze the data. 
+						[insert part where i maybe put in trendlines for ease? my confusion with statistics?]
+					</p>	         		
+	        </div>   			   
 
 	      </div> <!-- end services-list -->
    		
@@ -267,14 +270,62 @@
 
 			 <div class="intro">
 				 <h3 class="animate-this">What does the data reveal?</h3>  			
-				 <p class="lead">Mean posts per student: 5.5 <br>
-				 Mean time online per student: 2.9 hours (171.3 minutes) <br>
-				 Number of students approved after the class: 70.4%</p>
+				 <h2>Mean posts per student: 5.5 posts<br>
+				 Mean time online per student: 171.3 minutes (2.9 hours) <br>
+				 Percent of students approved after the class: 70.4%</h2>
 			 </div>   
 
 			 <canvas id="postsVTimechart" width="100%" height="50"></canvas>
+
+			 	<br>
+				<p>
+					This first chart graphs time spent on the virtual platform to the number of posts; 
+					it's a pretty strightforward chart. As the time spent online increases, 
+					so does the number of posts. 
+					Some students on the right side of the chart (and student #66 who was super active)
+					are outliers, but the general trend shows that time and number of posts have a positive correlation. 
+				</p>
+				<br>
+
 			 <canvas id="timeVGradechart" width="100%" height="50"></canvas>
+
+				<br>
+				<p>
+					Chart 2 illustrates time spent online to the final grade of each student. 
+					This time, we more strongly see a positive correlation, 
+					as people who spent more time in the virtual classroom had higher final grades. 
+					While there were people who didn't have to spent much time to earn a high grade, 
+					there certainly wasn't anyone who spent >[insert number] that failed the class. 
+				</p>
+				<br>
+
 			 <canvas id="postsVGradechart" width="100%" height="50"></canvas>
+			 	
+			 	<br>
+			 	<p>
+					We know that time and number of posts are positively correlated, 
+					but I still thought it was a good idea to do a number of posts to final grade chart.
+					As we can see here, it's also positively correlated. The chart looks a little skewed 
+					since student number 66 posted a lot but the grade value is limited, but the correlation 
+					still holds true. 
+				</p>
+				<br>
+
+			
+			<canvas id="reactionsVGradechart" width="100%" height="50"></canvas>
+			<canvas id="postsVReactionschart" width="100%" height="50"></canvas>
+			<br>
+			<p>
+				These final charts illustrate the relationship between number of reactions recieved to final grades 
+				and number of posts to number of reactions recieved. 
+				I hypothesized that grades are impacted by individual participation, but I would 
+				like to accurately represent all the the data given. <br>
+				Reactions recieved and grade have a positive correlation,
+				but if you compare the number of posts v. final grade chart (chart 3), they look almost identical. 
+				Additionally, the more posts posted by a student, the more reactions they will recieve. 
+				
+			</p>
+			<br>
 
 		</div> <!-- end col-full  -->
 	</div> <!-- end about-wrap  -->
@@ -736,6 +787,8 @@
    	<script src="js/charts/postsVTimechart.js"></script>
 	<script src="js/charts/timeVGradechart.js"></script>
 	<script src="js/charts/postsVGradechart.js"></script>
+	<script src="js/charts/reactionsVGradechart.js"></script>
+	<script src="js/charts/postsVReactionschart.js"></script>
 
 </body>
 
