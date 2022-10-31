@@ -162,7 +162,7 @@
 	            <div class="service-content">
 	            	<h3 class="h05">Clean up</h3>
 
-		            <p>First, I had to remove absent students. Slackers. Using df.drop, I deleted rows (students) if their time online was 0 seconds.</p>
+		            <p>First, I had to remove absent students. Using df.drop, I deleted rows (students) if their time online was 0 seconds.</p>
 					<p>Whoever thought it was a smart idea to use commas instead of a period to separate demical values CHOSE to make my life harder. I used x.replace in a for loop to change all ',' to '.'</p><br>	         		
 	         	
 				</div> 	         	 
@@ -179,7 +179,7 @@
 					<p>I also turned values for time online into minutes from seconds with another for loop, so it would be easier to interpret the information.</p>
 					<p>
 						After fixing all the individual sk grade values, 
-						it was a breeze using df.iloc to average the students' grades into a new column. <br><br>
+						it was easier to use df.iloc to average the students' grades into a new column. <br><br>
 						I also made a total reactions column, 
 						by using the same line but with different splicing and .sum instead of .mean</p>
 		                     		
@@ -195,12 +195,11 @@
 	            	<h3 class="h05">Printing values for Chart JS</h3>
 
 		            <p>
-						With a <strike>lot</strike> little help from Nicole, 
 						I used df.iterrows to df.append x and y coordinates in the specified format to a dictionary, 
 						then printed the dictionary. Even though it had extra quote marks, 
 						using ctrl+f, ctrl+h, and about 3 minutes, the chart data was done. <br><br>
 						Another place where I had to print values for the charts was for the student number labels and
-						approval green/red colors. Finally, [insert part where i figure out how to do trend lines :')]
+						approval green/red colors. Finally, I added trend lines. 
 					</p>
 	            </div> 	            	               
 
@@ -250,11 +249,10 @@
 
 			 	<br>
 				<p>
-					This first chart graphs time spent on the virtual platform to the number of posts; 
-					it's a pretty strightforward chart. As the time spent online increases, 
+					This first chart graphs time spent on the virtual platform to the number of posts, showing a weak positive correlation. As the time spent online increases, 
 					so does the number of posts. 
 					Some students on the right side of the chart (and student #66 who was super active)
-					are outliers, but the general trend shows that time and number of posts have a positive correlation. 
+					are outliers, but the general trend shows that time and number of posts are directly related. 
 				</p>
 				<br>
 
@@ -263,7 +261,7 @@
 				<br>
 				<p>
 					Chart 2 illustrates time spent online to the final grade of each student. 
-					This time, we see a positive correlation, 
+					This time, we see a strong positive correlation, 
 					as people who spent more time in the virtual classroom had higher final grades. 
 					While there were people who didn't have to spent much time to earn a high grade, 
 					there wasn't anyone who spent >128 minutes that failed the class. 
@@ -325,7 +323,7 @@
 				while low effort-low grade subjects did not grow from their initially low-scoring state. 
 				<br><br>
 				So what does this mean for students learning online? It may not be necessary to overexert yourself over assignments
-				or posting to the class stream super often (student #66, I'm looking at you), students should be still be doing their best.
+				or posting to the class stream super often (for example, student #66), students should be still be doing their best.
 				Striving for learning and not simply participation can be both beneficial to your grade and you as a person. 
 				<br><br>
 				Something I would change about the procedure of this project is to use multiple linear regression or a function
